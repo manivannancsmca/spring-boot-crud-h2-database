@@ -25,4 +25,5 @@ public class SampleDataLoader implements CommandLineRunner {
             System.out.println("Sample product data loaded.");
         }
     }
+    
 }
