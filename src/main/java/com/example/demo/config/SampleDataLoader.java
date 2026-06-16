@@ -16,6 +16,7 @@ public class SampleDataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        
         if (repository.count() == 0) {
             repository.save(new Product("Laptop", "High-performance laptop with 32GB RAM", 1499.99));
             repository.save(new Product("Mouse", "Wireless ergonomic mouse", 49.99));
@@ -24,6 +25,7 @@ public class SampleDataLoader implements CommandLineRunner {
             repository.save(new Product("Headphones", "Noise-cancelling Bluetooth headphones", 199.99));
             System.out.println("Sample product data loaded.");
         }
+        
     }
     
 }
